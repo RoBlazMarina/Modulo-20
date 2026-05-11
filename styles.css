@@ -11,7 +11,7 @@ body {
     padding: 20px;
 }
 
-.pantalla {
+.screen {
     background: rgba(245, 250, 252, 0.93);
     border: 3px solid #2a7aaa;
     border-radius: 18px;
@@ -21,22 +21,22 @@ body {
     box-shadow: 0 12px 25px rgba(26, 58, 82, 0.15);
 }
 
-.pantalla h1,
-.pantalla h2 {
+.screen h1,
+.screen h2 {
     margin: 0 0 18px;
 }
 
-.pantalla h1 {
+.screen h1 {
     color: #d9542f;
     font-size: 2rem;
 }
 
-.pantalla h2 {
+.screen h2 {
     color: #d9542f;
     font-size: 1.2rem;
 }
 
-.oculto {
+.hidden {
     display: none;
 }
 
@@ -55,15 +55,15 @@ button:hover {
     background: #c1440f;
 }
 
-button#btn-pausa {
+button#pause-button {
     background: #4a90e2;
 }
 
-button#btn-pausa:hover {
+button#pause-button:hover {
     background: #3a7bc8;
 }
 
-#tiempo {
+#time {
     font-size: 4.5rem;
     margin: 20px 0;
     color: #1a5a8a;
@@ -74,7 +74,7 @@ img {
     border-radius: 18px;
 }
 
-canvas#laberinto-canvas {
+canvas#maze-canvas {
     border: 2px solid #2a7aaa;
     border-radius: 10px;
     margin: 15px 0;
@@ -84,13 +84,13 @@ canvas#laberinto-canvas {
     background: #f5fafc;
 }
 
-.subtexto {
+.subtext {
     font-size: 0.9rem;
     color: #666;
     margin: -10px 0 15px 0;
     font-style: italic;
 }
 
-#pantalla-gato button {
+#cat-screen button {
     margin-top: 16px;
 }

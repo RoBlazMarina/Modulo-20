@@ -7,50 +7,50 @@
 </head>
 <body>
 
-    <!-- Pantalla inicial -->
-    <div id="pantalla-inicio" class="pantalla">
-        <h1>Pomodoro</h1>
-        <button onclick="iniciarEstudio()">Estudiar (25 min)</button>
-        <button onclick="iniciarDescanso()">Descanso (5 min)</button>
-        <button onclick="mostrarSuscripcion()">Cambiar tiempos</button>
+    <!-- Home screen -->
+    <div id="home-screen" class="screen">
+        <h1>Pomodoro Technique</h1>
+        <button onclick="startStudy()">Study (25 min)</button>
+        <button onclick="startBreak()">Break (5 min)</button>
+        <button onclick="showSubscription()">Change timer</button>
     </div>
 
-    <!-- Pantalla temporizador -->
-    <div id="pantalla-temporizador" class="pantalla oculto">
-        <h1 id="titulo-temporizador"></h1>
-        <div id="tiempo">00:00</div>
+    <!-- Timer screen -->
+    <div id="timer-screen" class="screen hidden">
+        <h1 id="timer-title"></h1>
+        <div id="time">00:00</div>
 
-        <button id="btn-pausa" onclick="pausarReanudar()">Pausar</button>
-        <button onclick="reiniciar()">Reiniciar</button>
-        <button onclick="volverInicio()">Volver</button>
+        <button id="pause-button" onclick="pauseRestart()">Pause</button>
+        <button onclick="restart()">Restart</button>
+        <button onclick="goToHome()">Back</button>
     </div>
 
-    <!-- Pantalla suscripción -->
-    <div id="pantalla-suscripcion" class="pantalla oculto">
-        <h2>Para cambiar los tiempos necesitas ✨𝓈𝓊𝓈𝒸𝓇𝒾𝒷𝒾𝓇𝓉𝑒✨</h2>
-        <button onclick="iniciarLaberinto()">Suscribirse</button>
-        <button onclick="volverInicio()">Volver</button>
+    <!-- Subscription screen -->
+    <div id="subscription-screen" class="screen hidden">
+        <h2>To change the timer you need to ✨𝓈𝓊𝓈𝒸𝓇𝒾𝒷𝑒✨</h2>
+        <button onclick="startMaze()">Subscribe</button>
+        <button onclick="goToHome()">Back</button>
     </div>
 
-    <!-- Pantalla del laberinto -->
-    <div id="pantalla-laberinto" class="pantalla oculto">
-        <h2>Alcanza la salida y podrás suscribirte! <br>
+    <!-- Maze screen -->
+    <div id="maze-screen" class="screen hidden">
+        <h2>Reach the exit and you'll subscribe! <br>
             ☆ﾐ(o*･ω･)ﾉ</h2>
-        <p class="subtexto">y demostrar que de verdad quieres suscribirte (y que eres humano)</p>
-        <canvas id="laberinto-canvas" width="300" height="300"></canvas>
-        <button onclick="volverInicio()">Volver</button>
+        <p class="subtext">and prove you really want to subscribe :P</p>
+        <canvas id="maze-canvas" width="300" height="300"></canvas>
+        <button onclick="goToHome()">Back</button>
     </div>
 
-    <!-- Pantalla de gif -->
-    <div id="pantalla-gato" class="pantalla oculto">
+    <!-- Cat screen -->
+    <div id="cat-screen" class="screen hidden">
         <h2>|ハ｀∀´ﾉ Muhahaha</h2>
         <img src="assets/bingus-cat.gif" alt="Bingus Cat">
         <div>
-            <button onclick="volverInicio()">Volver</button>
+            <button onclick="goToHome()">Back</button>
         </div>
     </div>
 
-    <audio id="alarma" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+    <audio id="alarm" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
 
     <script src="app.js"></script>
 </body>
