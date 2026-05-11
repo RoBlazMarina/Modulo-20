@@ -27,12 +27,27 @@
 
     <!-- Pantalla suscripción -->
     <div id="pantalla-suscripcion" class="pantalla oculto">
-        <h2>Para cambiar los tiempos necesitas suscribirte</h2>
-        <button onclick="mostrarGato()">Suscribirse</button>
-        <div id="gato" class="oculto">
-            <img src="https://media.tenor.com/2roX3uxz_68AAAAC/cat-dance.gif">
-        </div>
+        <h2>Para cambiar los tiempos necesitas ✨𝓈𝓊𝓈𝒸𝓇𝒾𝒷𝒾𝓇𝓉𝑒✨</h2>
+        <button onclick="iniciarLaberinto()">Suscribirse</button>
         <button onclick="volverInicio()">Volver</button>
+    </div>
+
+    <!-- Pantalla del laberinto -->
+    <div id="pantalla-laberinto" class="pantalla oculto">
+        <h2>Alcanza la salida y podrás suscribirte! <br>
+            ☆ﾐ(o*･ω･)ﾉ</h2>
+        <p class="subtexto">y demostrar que de verdad quieres suscribirte (y que eres humano)</p>
+        <canvas id="laberinto-canvas" width="300" height="300"></canvas>
+        <button onclick="volverInicio()">Volver</button>
+    </div>
+
+    <!-- Pantalla de gif -->
+    <div id="pantalla-gato" class="pantalla oculto">
+        <h2>|ハ｀∀´ﾉ Muhahaha</h2>
+        <img src="assets/bingus-cat.gif" alt="Bingus Cat">
+        <div>
+            <button onclick="volverInicio()">Volver</button>
+        </div>
     </div>
 
     <audio id="alarma" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
